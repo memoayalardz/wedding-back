@@ -1,7 +1,7 @@
 const { Schema, model } = require('mongoose');
 
 const CoverageSchema = Schema({
-    user_id:{
+    user_id: {
         type: String,
         required: true
     },

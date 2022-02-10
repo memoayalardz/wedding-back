@@ -22,10 +22,11 @@ app.use( express.static('public') );
 
 
 // Rutas
-app.use( '/api/weddings', require('./routes/weddings') );
-app.use( '/api/guests', require('./routes/guests') );
-app.use( '/api/usuarios', require('./routes/users') );
 app.use( '/api/auth', require('./routes/auth') );
+app.use( '/api/weddings', require('./routes/weddings') );
+app.use( '/api/coverages', require('./routes/coverages') );
+app.use( '/api/usuarios', require('./routes/users') );
+app.use( '/api/guests', require('./routes/guests') );
 
 
 

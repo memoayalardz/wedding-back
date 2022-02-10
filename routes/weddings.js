@@ -20,6 +20,8 @@ router.post( '/',
     [
         check('date', 'La fecha es obligatoria').not().isEmpty(),
         check('coverage', 'El paquete es obligatorio').not().isEmpty(),
+        check('newlywed_name_one', 'El nombre es obligatorio').not().isEmpty(),
+        check('newlywed_name_two', 'El nombre es obligatorio').not().isEmpty(),
         validarCampos,
     ], 
     crearWedding 
